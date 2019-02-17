@@ -1,0 +1,43 @@
+#convehiculo {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #convehiculo td, #convehiculo th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #convehiculo tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #convehiculo tr:hover {background-color: #ddd;}
+  
+  #convehiculo th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(104, 110, 105);
+    color: white;
+  }
+
+  #convehiculo button[type=submit] {
+    background-color: rgb(76, 78, 175);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: 1px solid #ccc;;
+    border-radius: 4px;
+    cursor: pointer;
+    float: none;
+    align-self: center;
+  }
+  #convehiculo button[type=button] {
+    background-color: rgb(80, 139, 46);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: 1px solid #ccc;;
+    border-radius: 4px;
+    cursor: pointer;
+    float: none;
+    align-self: center;
+  }

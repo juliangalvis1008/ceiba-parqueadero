@@ -1,0 +1,58 @@
+<div>
+    <h2>Carros</h2>
+      <div class="table-responsive">
+          <table class="table" mdbTable responsive="true" id= convehiculo>
+              <thead class="grey lighten-1 black-text">
+                  <tr>
+                    <th scope="col">Placa</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Fecha Entrada</th>
+                    <th scope="col">Hora Entrada</th>         
+                    <th scope="col">Fecha Salida</th>
+                    <th scope="col">Hora Salida</th>
+                    <th scope="col">Valor Cobrado</th>             
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr mdbTableCol *ngFor="let vehiculo of vehiculos">
+                      <td>{{vehiculo.placa  | uppercase}}</td>
+                      <td>{{vehiculo.tipoVehiculo}}</td>
+                      <td>{{vehiculo.fechaIngreso | date: 'dd/MM/yyyy'}}</td>
+                      <td>{{vehiculo.fechaIngreso | date: 'HH:mm'}}</td>
+                      <td>{{vehiculo.fechaSalida | date: 'dd/MM/yyyy'}}</td>
+                      <td>{{vehiculo.fechaSalida | date: 'HH:mm'}}</td>
+                      <td>{{vehiculo.valorCobro}}</td>
+
+                  </tr>
+              </tbody>
+          </table>          
+      </div>
+      <h2>Motos</h2>
+      <div class="table-responsive">
+              <table class="table" mdbTable responsive="true" id= convehiculo>
+                  <thead class="grey lighten-1 black-text">
+                      <tr>
+                        <th scope="col">Placa</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Cilindraje</th>
+                        <th scope="col">Fecha Entrada</th>
+                        <th scope="col">Hora Entrada</th>
+                        <th scope="col">Fecha Salida</th>
+                        <th scope="col">Hora Salida</th>
+                        <th scope="col">Valor Cobrado</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr mdbTableCol *ngFor="let vehiculo of vehiculosMoto">
+                        <td>{{vehiculo.placa  | uppercase}}</td>
+                        <td>{{vehiculo.tipoVehiculo}}</td>
+                        <td>{{vehiculo.cilindraje}}</td>
+                        <td>{{vehiculo.fechaIngreso | date: 'dd/MM/yyyy'}}</td>
+                        <td>{{vehiculo.fechaIngreso | date: 'HH:mm'}}</td>                 
+                        <td>{{vehiculo.fechaSalida | date: 'dd/MM/yyyy'}}</td>
+                        <td>{{vehiculo.fechaSalida | date: 'HH:mm'}}</td>
+                        <td>{{vehiculo.valorCobro}}</td>         
+                      </tr>
+                  </tbody>
+              </table>          
+      </div>
