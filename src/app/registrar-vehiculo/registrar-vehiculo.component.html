@@ -14,8 +14,12 @@
       <div class="form-group" [hidden]="vehiculo.tipoVehiculo != 'MOTO'">
         <label class="col-form-label">Cilindraje</label>
         <input type="text" class="form-control" placeholder="Ingrese el cilindraje" name="cilindraje" [(ngModel)]="vehiculo.cilindraje" />
-      </div>      
-      <button type="submit" class="btn btn-primary" (click)="registroVehiculo()">Ingresar Vehiculo</button>
+      </div>    
+      <div class="form-group" [hidden]="true">
+        <label class="col-form-label">Respuesta</label>
+        <input type="text" class="form-control"  name="respuesta" [(ngModel)]="respuesta" />
+      </div> 
+      <button type="submit" class="btn btn-primary" id = "registrarbutton" (click)="registroVehiculo()">Ingresar Vehiculo</button>
       
    </form>
   

@@ -24,11 +24,15 @@ export class RegistrarVehiculoComponent {
     this.vehiculo.placa =  this.vehiculo.placa.toUpperCase(); 
     this.registravehiculo.registrarEntrada(this.vehiculo)
     .subscribe((data:Mensaje) => {
-          this.respuesta  = data.mensaje ,
+         this.setRespuesta( data.mensaje) ,
          this.loadResponse(data.mensaje)
         });
   }
   
+  setRespuesta(message: any){
+    this.respuesta = message;
+  }
+
   loadResponse(message: any) {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {

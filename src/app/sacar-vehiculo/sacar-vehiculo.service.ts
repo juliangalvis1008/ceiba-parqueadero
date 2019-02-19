@@ -17,7 +17,7 @@ export class SacarVehiculoService {
   constructor(private http:HttpClient) { }
 
   public sacarVehiculo(vehiculo:Vehiculo){
-    return this.http.post(url+'/sacarVehiculo',vehiculo,httpOptions);
+    return this.http.post(url+'/salidaVehiculo',vehiculo,httpOptions);
   }
 
 }

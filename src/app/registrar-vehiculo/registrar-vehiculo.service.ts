@@ -20,7 +20,7 @@ export class RegistrarVehiculoService {
 
   public registrarEntrada(vehiculo:Vehiculo){
 
-    return this.http.post(url+'/ingresarVehiculo',vehiculo,httpOptions);
+    return this.http.post(url+'/ingresoVehiculo',vehiculo,httpOptions);
   }
 
 }

@@ -18,10 +18,10 @@ export class ConsultarVehiculosService {
   constructor(private http:HttpClient) { }
 
   public consultaVehiculos(tipoVehiculo:string):Observable<Vehiculo[]>{
-    return this.http.get<Vehiculo[]>(url+'/listarVehiculosParqueados/'+tipoVehiculo);
+    return this.http.get<Vehiculo[]>(url+'/listaVehiculosParqueados/'+tipoVehiculo);
   }
 
   public consultaVehiculosLiquidados(tipoVehiculo:string):Observable<Vehiculo[]>{
-    return this.http.get<Vehiculo[]>(url+'/listarVehiculosLiquidados/'+tipoVehiculo);
+    return this.http.get<Vehiculo[]>(url+'/listaVehiculosLiquidados/'+tipoVehiculo);
   }
 }
